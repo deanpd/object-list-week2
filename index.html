@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Week 2 Homework</title>
+</head>
+  
+<body> 
+  <div id="band-info">
+    <!--User presses button the add a new band.-->
+    <button id="new-data" type="button" name="new-data">New Band Data</button>
+    
+    <table>
+      <thead>
+        <tr>
+          <th>
+            Band Name
+          </th>
+          <th>
+            Music Genre
+          </th>
+        </tr>
+      </thead>
+      <tbody id="results">
+      </tbody>
+    </table>
+  </div>
+  
+  <!--Hidden until users presses the New Band button.-->
+  <div id="data-values" style="display:none">
+    <form>
+      <fieldset>
+        <label for="band-name">Band Name</label>
+        <input id ="band-name" type="text">
+        
+        <label for="band-genre">Band Genre</label>
+        <input id="band-genre" type="text">
+        
+        <button id="submit" type="button" name="submit">Submit</button>
+        <button id="reset" type="button" name="reset">Reset</button>
+      </fieldset>
+    </form>
+  </div>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="javascript/script.js"></script>
+</body>
+</html>
